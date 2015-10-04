@@ -2,7 +2,7 @@
 manifest
 ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
 	package
-		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:11:5-32
+		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:11:5-38
 		INJECTED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml
 		INJECTED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml
 	android:versionName
@@ -36,25 +36,25 @@ MERGED from [com.android.support:support-v4:22.2.0] B:\Downloads\Parse-Starter-P
 	android:theme
 		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:21:9-40
 	android:name
-		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:17:9-43
-meta-data#com.parse.APPLICATION_ID
+		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:17:9-64
+meta-data#com.shoperino.APPLICATION_ID
 ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:22:9-24:52
 	android:value
 		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:24:13-49
 	android:name
-		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:23:13-52
-meta-data#com.parse.CLIENT_KEY
+		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:23:13-56
+meta-data#com.shoperino.CLIENT_KEY
 ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:25:9-27:56
 	android:value
 		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:27:13-53
 	android:name
-		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:26:13-48
-activity#com.parse.starter.MainActivity
+		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:26:13-52
+activity#com.shoperino.starter.MainActivity
 ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:29:9-37:20
 	android:label
 		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:31:13-45
 	android:name
-		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:30:13-41
+		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:30:13-62
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN

@@ -25,8 +25,10 @@ import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
+import com.shoperino.shoperino.R;
 
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -36,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    /*ParseAnalytics.trackAppOpenedInBackground(getIntent());
+    ParseAnalytics.trackAppOpenedInBackground(getIntent());
     ParseUser curr = ParseUser.getCurrentUser();
     if (curr == null) {
       final Button button = (Button) findViewById(R.id.login_button);
@@ -60,7 +62,8 @@ public class MainActivity extends ActionBarActivity {
     else
     {
 
-    }*/
+    }
+
   }
 
   @Override
