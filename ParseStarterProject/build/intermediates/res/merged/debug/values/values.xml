@@ -261,6 +261,7 @@
     <string name="com_facebook_tooltip_default">New! You\'re in control - choose what info you want to share with apps.</string>
     <!-- From: file:/B:/Docs/Shoperino/ParseStarterProject/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="facebook_app_id">900234710053147</string>
     <string name="hello_world">Hello World!</string>
     <!-- From: file:/B:/Docs/Shoperino/ParseStarterProject/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
     <eat-comment/>

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:10:1-43:12
 	package
 		ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:11:5-38
 		INJECTED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:14
 	android:name
 		ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:14:22-76
 application
-ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:16:5-38:19
+ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:16:5-41:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.0.0] B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.0.0\AndroidManifest.xml:28:5-20
@@ -50,7 +50,7 @@ ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:25
 	android:name
 		ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:26:13-52
 activity#com.shoperino.starter.MainActivity
-ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:29:9-37:20
+ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:29:9-40:20
 	android:label
 		ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:31:13-45
 	android:name
@@ -65,6 +65,12 @@ category#android.intent.category.LAUNCHER
 ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:35:17-77
 	android:name
 		ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:35:27-74
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:37:13-39:58
+	android:value
+		ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:39:17-56
+	android:name
+		ADDED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml:38:17-62
 uses-sdk
 INJECTED from B:\Docs\Shoperino\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.0] B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:20:5-43

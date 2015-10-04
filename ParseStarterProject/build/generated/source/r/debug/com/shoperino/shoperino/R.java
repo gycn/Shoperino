@@ -1909,11 +1909,12 @@ containing a value of this type.
         public static final int com_facebook_send_button_text=0x7f060021;
         public static final int com_facebook_share_button_text=0x7f060022;
         public static final int com_facebook_tooltip_default=0x7f060023;
-        public static final int hello_world=0x7f060024;
+        public static final int facebook_app_id=0x7f060024;
+        public static final int hello_world=0x7f060025;
         public static final int messenger_send_button_text=0x7f06000d;
-        public static final int parse_app_id=0x7f060025;
-        public static final int parse_client_key=0x7f060026;
-        public static final int status_bar_notification_info_overflow=0x7f060027;
+        public static final int parse_app_id=0x7f060026;
+        public static final int parse_client_key=0x7f060027;
+        public static final int status_bar_notification_info_overflow=0x7f060028;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f080073;
