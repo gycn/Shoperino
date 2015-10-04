@@ -25,6 +25,8 @@ application
 ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:16:5-38:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.0.0] B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.0.0\AndroidManifest.xml:28:5-20
+MERGED from [com.android.support:support-v4:22.2.0] B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml:20:9-41
 	android:allowBackup
@@ -66,6 +68,8 @@ ADDED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\mai
 uses-sdk
 INJECTED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.0] B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.0] B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.android:facebook-android-sdk:4.0.0] B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.0.0\AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:support-v4:22.2.0] B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from B:\Downloads\Parse-Starter-Project-1.10.2\ParseStarterProject\src\main\AndroidManifest.xml
