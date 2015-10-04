@@ -48,12 +48,13 @@ public class MainActivity extends ActionBarActivity {
     ParseUser curr = ParseUser.getCurrentUser();
 
     showToast(getApplicationContext(),"start");
-    if (curr == null) {
+    //if (curr == null) {
       final Button button = (Button) findViewById(R.id.login_button);
 
       button.setOnClickListener(new View.OnClickListener() {
         public void onClick(View v) {
           Collection<String> permissions = new ArrayList<String>();
+          ParseFacebookUtils.initialize(v.getContext());
           ParseFacebookUtils.logInWithReadPermissionsInBackground((Activity) v.getContext(), permissions, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException err) {
@@ -69,12 +70,12 @@ public class MainActivity extends ActionBarActivity {
           });
         }
       });
-    }
+    /*}
     else
     {
 
       showToast(getApplicationContext(),"already logged in "+curr.toString());
-    }
+    }*/
 
   }
 
