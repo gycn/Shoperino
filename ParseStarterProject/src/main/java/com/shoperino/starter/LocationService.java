@@ -1,14 +1,23 @@
 package com.shoperino.starter;
 
 import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
+import android.location.Location;
 import android.location.LocationListener;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Bundle;
 import android.os.IBinder;
+import android.util.Log;
 
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.FusedLocationProviderApi;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -18,6 +27,7 @@ public class LocationService extends Service implements LocationListener,
         GoogleApiClient.OnConnectionFailedListener {
     LocationRequest mLocationRequest;
     GoogleApiClient  mGoogleApiClient;
+    FusedLocationProviderApi api;
     @Override
     public void onCreate() {
         //creating log file in mobile
@@ -30,21 +40,20 @@ public class LocationService extends Service implements LocationListener,
         mLocationRequest.setInterval(5*1000);
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         //  mLocationRequest.setFastestInterval(5*1000);
-        LocationServices.FusedLocationApi.requestLocationUpdates(
-                mGoogleApiClient, mLocationRequest, this);
+        api = LocationServices.FusedLocationApi;
+        api.requestLocationUpdates(
+                mGoogleApiClient, mLocationRequest, (com.google.android.gms.location.LocationListener) this);
 
     }
     @Override
     public void onStart(Intent intent, int startId) {
         int start = Service.START_STICKY;
-        appendLog(DateFormat.getDateTimeInstance().format(new Date()) + ": Service Started:", com.example.locationservice.Constants.LOG_FILE);
 
     }
 
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
-        // TODO Auto-generated method stub
-        appendLog(DateFormat.getDateTimeInstance().format(new Date()) + ": Connection to client failed", com.example.locationservice.Constants.LOG_FILE);
+        // TODO Auto-generated method stub-=
         this.stopSelf();
 
     }
@@ -53,50 +62,39 @@ public class LocationService extends Service implements LocationListener,
     public void onConnected(Bundle arg0) {
         // TODO Auto-generated method stub
         Log.i("info", "Location Client is Connected");
-        appendLog(DateFormat.getDateTimeInstance().format(new Date()) + ": Location Client Connectd:", com.example.locationservice.Constants.LOG_FILE);
         //checking for locaton enabled or not
-        if(Util.isLocationEnabled(getApplicationContext())){
-            //checking for internet available or not
-            if(Util.isInternetOn(getApplicationContext())){
-                mLocationClient.requestLocationUpdates(mLocationRequest, this);
-            }else{
-                Log.i("info", "Internet not available");
-                appendLog(DateFormat.getDateTimeInstance().format(new Date()) + ": Internet not available", com.example.locationservice.Constants.LOG_FILE);
-                this.stopSelf();
-            }
-        }else{
-            Log.i("info", "Location Acess disabled");
-            appendLog(DateFormat.getDateTimeInstance().format(new Date()) + ": Location Acess disabled", com.example.locationservice.Constants.LOG_FILE);
-            this.stopSelf();
-        }
-        Log.i("info", "Service Connect status :: " + isServicesConnected());
+
+        api.requestLocationUpdates(
+                mGoogleApiClient, mLocationRequest, (com.google.android.gms.location.LocationListener) this);
 
     }
 
     @Override
-    public void onDisconnected() {
-        // TODO Auto-generated method stub
-        appendLog(DateFormat.getDateTimeInstance().format(new Date()) + ": Location Client DisConnectd:", com.example.locationservice.Constants.LOG_FILE);
-        Log.i("info", "Location Client is DisConnected");
+    public void onConnectionSuspended(int i) {
 
     }
+
+   
 
     @Override
     public void onLocationChanged(Location location) {
         // TODO Auto-generated method stub
         double latitude = location.getLatitude();
         double longitude = location.getLongitude();
-        appendLog(DateFormat.getDateTimeInstance().format(new Date()) + ": Location Changed:", com.example.locationservice.Constants.LOG_FILE);
         Log.i("info", "Latitude :: " + latitude);
         Log.i("info", "Longitude :: " + longitude);
-        if(Util.isInternetOn(getApplicationContext())){
+        if(isOnline()){
             //sending location details
             sendLocation(location);
         }else{
             this.stopSelf();
             Log.i("info", "Internet not available");
-            appendLog(DateFormat.getDateTimeInstance().format(new Date()) + ": Internet not available", com.example.locationservice.Constants.LOG_FILE);
         }
+    }
+
+    private void sendLocation(Location location)
+    {
+
     }
 
     @Override
@@ -108,8 +106,6 @@ public class LocationService extends Service implements LocationListener,
     public void onDestroy() {
         // TODO Auto-generated method stub
         Log.i("info", "Service is destroyed");
-        mLocationClient.removeLocationUpdates(this);
-        appendLog(DateFormat.getDateTimeInstance().format(new Date()) + ": Service Destroyed:", com.example.locationservice.Constants.LOG_FILE);
         super.onDestroy();
     }
     private boolean isServicesConnected() {
@@ -121,5 +117,27 @@ public class LocationService extends Service implements LocationListener,
         } else {
             return false;
         }
+    }
+
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+        // put something here
+    }
+
+    @Override
+    public void onProviderDisabled(String provider) {
+        // put something here
+    }
+
+    @Override
+    public void onProviderEnabled(String provider) {
+        // put something here
+    }
+
+    private boolean isOnline() {
+        ConnectivityManager cm =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        return netInfo != null && netInfo.isConnectedOrConnecting();
     }
 }
