@@ -10,10 +10,12 @@ package com.shoperino.starter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Base64;
 import android.util.Log;
@@ -25,6 +27,7 @@ import android.widget.Toast;
 
 import com.parse.LogInCallback;
 import com.parse.ParseAnalytics;
+import com.parse.ParseAnonymousUtils;
 import com.parse.ParseException;
 import com.parse.ParseFacebookUtils;
 import com.parse.ParseObject;
@@ -46,36 +49,48 @@ public class MainActivity extends ActionBarActivity {
 
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
     ParseUser curr = ParseUser.getCurrentUser();
-
     showToast(getApplicationContext(),"start");
-    //if (curr == null) {
+    if (curr == null || ParseAnonymousUtils.isLinked(curr)) {
       final Button button = (Button) findViewById(R.id.login_button);
 
       button.setOnClickListener(new View.OnClickListener() {
-        public void onClick(View v) {
+        public void onClick(final View v) {
           Collection<String> permissions = new ArrayList<String>();
+          permissions.add("public_profile");
+          permissions.add("user_friends");
           ParseFacebookUtils.initialize(v.getContext());
-          ParseFacebookUtils.logInWithReadPermissionsInBackground((Activity) v.getContext(), permissions, new LogInCallback() {
+          ParseFacebookUtils.logInWithReadPermissionsInBackground(MainActivity.this, permissions, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException err) {
               if (user == null) {
-                showToast(getApplicationContext(),"canceled");
+                showToast(getApplicationContext(), "canceled");
               } else if (user.isNew()) {
                 user.saveInBackground();
-                showToast(getApplicationContext(),"successful login");
+                showToast(getApplicationContext(), "successful login");
+                Intent intent = new Intent(MainActivity.this, LocationService.class);
+                startService(intent);
+                Intent intent2 = new Intent(MainActivity.this,LocationTest.class);
+                startActivity(intent2);
               } else {
                 showToast(getApplicationContext(),"successful login");
+                Intent intent = new Intent(MainActivity.this, LocationService.class);
+                startService(intent);
+                Intent intent2 = new Intent(MainActivity.this,LocationTest.class);
+                startActivity(intent2);
               }
             }
           });
         }
       });
-    /*}
+    }
     else
     {
-
       showToast(getApplicationContext(),"already logged in "+curr.toString());
-    }*/
+      Intent intent = new Intent(this, LocationService.class);
+      startService(intent);
+      Intent intent2 = new Intent(this,LocationTest.class);
+      startActivity(intent2);
+    }
 
   }
 

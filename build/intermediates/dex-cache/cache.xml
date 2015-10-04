@@ -2,60 +2,235 @@
 <items version="2" >
 
     <item
-        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.1.0\jars\classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-6438e233be11b8206f8ef65e9027d4efc210228a.jar" />
+        revision="23.0.0"
+        sha1="041d93cf0533591c29d1d7263b2fa114dbfb20bd">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-19a14b8dfb6fd99831dfe2e626f8c3c3af9d0985.jar" />
     </item>
     <item
-        jar="C:\Users\Gary\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.1\44780c2cf98f6a3cf4e77f1234d644758b329201\bolts-android-1.2.1.jar"
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.1.0\jars\classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
-        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\bolts-android-1.2.1-a11c7ebfc1901d6d78bd63d3f247f31119fa3023.jar" />
+        revision="23.0.0"
+        sha1="3c729e6d76a36c5dc27e6a4c4009296f49eaa88a">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-62c2ae019d2d38831bec14c7dd96bdcc59a8c5a8.jar" />
     </item>
     <item
-        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.1.0\jars\classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-f688805c96344bcb3f946094dc66363598048d5e.jar" />
-    </item>
-    <item
-        jar="C:\Users\Gary\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.10.2\2eaa8b8ca97c915eab3883bab40e15611e5e0393\parse-android-1.10.2.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2eaa8b8ca97c915eab3883bab40e15611e5e0393">
-        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\parse-android-1.10.2-e89cc75fe789cd524dac5c8d82fb6e8d3d0a0fa8.jar" />
-    </item>
-    <item
-        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0f254ec13d6671680482d2218f01ecf14dfa93e6">
-        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-da8df35b4f95c3c5d8a9d07c5807d4e7e68d760e.jar" />
-    </item>
-    <item
-        jar="B:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-4b635d48c12f41c646e9e1472a4ba3fc51d776e4.jar" />
+        revision="23.0.0"
+        sha1="b92002cb2f0e11a226ac5bac6dff1dc2a9d0b774">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-bff278eaae68b07ad4b5773b05803988a1c310de.jar" />
     </item>
     <item
         jar="B:\Docs\Shoperino\libs\ParseFacebookUtilsV4-1.10.2.jar"
         jumboMode="false"
-        revision="22.0.1"
+        revision="23.0.0"
         sha1="d8af02f154ae32c7a97ae56fcd119cc174f87707">
         <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\ParseFacebookUtilsV4-1.10.2-c903083a1abcf6e50bc5f71e13d6e300a63ca7a8.jar" />
     </item>
     <item
-        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-7973063e08dc56d2f334398d2a9d675aad88cacd.jar" />
+        revision="23.0.0"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-4cc20c18b83621d41fffa9cb9a97edf0c60f3f5c.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="0f254ec13d6671680482d2218f01ecf14dfa93e6">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-da8df35b4f95c3c5d8a9d07c5807d4e7e68d760e.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-06e885c8cfc409e2c3d5110b03a1f9b684666b58.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-5d938202a555c5457f0494ddb0d8f94bff143da7.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="97f3b099801a9ad9d70e835b9125273e986eb68d">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-1b7335a019c8cd4c47ba2f168fb99323a63c5961.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-6d8c222a5984c3ac84a46f1a9d99ce162b51610e.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="993834cb17d07d51b92db89d2c330243592ebf77">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-2bc15196329ed3156610b8af357940481609b9c6.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-bc395c222490986242d6563675d2049acc561b4e.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="482de223655d06253cc6a4955d653f8994169500">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-c7f627b2d7fe3d59435d17c6f91e5c85551d0998.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-ef475387a9ff9e16d30c2b16d1c597f531222e33.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-1c7c0bbde794e73e99b0f52216af68f0498040c3.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="95758a2905669affbffc5ddd262921d375674fad">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-61893962ea911a847b3043d17eae1098e6efe5fb.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-38dc85035f7817b135e52790ca37f4a32ae02b41.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-5e462ad3da6d54226ad8a121446185f29583876c.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d61920aba361832a9545a43fa8c9453eb02f18f7">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-d5681c29d9967701ac8698304a4e9c7a17237592.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-19d930e4c1b4f2970ef513736b8c518f1f2ebca2.jar" />
+    </item>
+    <item
+        jar="B:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-48f741a2e00decc7b11fd616fefb91038234d7c2.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="9cf8c0ef60847621c7ad00b4f78dbfc9daba4af2">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-e4243ff77b593fd97f140af30fbd4de634ea1bb9.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3b05c18f60969ecc2ba49c0409c4b96be2d9cb0c">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-4653e0eee103c6d3861fc0999767b453fd7d6c4a.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="997773777cf3904c11d6764fe3b7668538220e49">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-2090b50f81834ae21f20d0f38756201a326645bb.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3aed37c38c56679602255dd72ef356da5d327cda">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-5f07cd4694d3b405c822a220fb0f15fc4134117d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Gary\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.10.2\2eaa8b8ca97c915eab3883bab40e15611e5e0393\parse-android-1.10.2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="2eaa8b8ca97c915eab3883bab40e15611e5e0393">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\parse-android-1.10.2-e89cc75fe789cd524dac5c8d82fb6e8d3d0a0fa8.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-5c98f7078a54f8aee4c9c6a9a1e35e1adb9dba08.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="17449c47df35c754b257532052f1270c444f7993">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-28374dde410b140999022457a23730afc243e519.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="325788a04b436a0bccbc5b4c54cf0f12ebdcbd2d">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-ccd7a2e1981d32754b2652ce632dedc1c6b86c4d.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3178362320bcf51228835b60ff978efadfd1f783">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-786a898adeb9482640f730b4e6bd920d877b3a46.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d294caf562c4c678b2ef351662a0ca6f1a4d06c0">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-7710d4b4af7f1ba6ef807bdae45926f3e1c2a0a1.jar" />
+    </item>
+    <item
+        jar="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d93480da1d303122ee67dc3bc23e6297bdef9951">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-2de397a7dece087e08c1d018405b792bb7de6fe2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Gary\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.1\44780c2cf98f6a3cf4e77f1234d644758b329201\bolts-android-1.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
+        <dex dex="B:\Docs\Shoperino\ParseStarterProject\build\intermediates\pre-dexed\debug\bolts-android-1.2.1-a11c7ebfc1901d6d78bd63d3f247f31119fa3023.jar" />
     </item>
 
 </items>

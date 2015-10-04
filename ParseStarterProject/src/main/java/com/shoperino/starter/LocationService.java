@@ -18,6 +18,10 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.FusedLocationProviderApi;
+import com.parse.ParseException;
+import com.parse.ParseGeoPoint;
+import com.parse.ParseUser;
+import com.parse.SaveCallback;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -28,6 +32,7 @@ public class LocationService extends Service implements LocationListener,
     LocationRequest mLocationRequest;
     GoogleApiClient  mGoogleApiClient;
     FusedLocationProviderApi api;
+    ParseUser current;
     @Override
     public void onCreate() {
         //creating log file in mobile
@@ -37,17 +42,17 @@ public class LocationService extends Service implements LocationListener,
                 .addApi(LocationServices.API)
                 .build();
         mLocationRequest = LocationRequest.create();
-        mLocationRequest.setInterval(5*1000);
+        mLocationRequest.setInterval(5 * 1000);
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         //  mLocationRequest.setFastestInterval(5*1000);
         api = LocationServices.FusedLocationApi;
-        api.requestLocationUpdates(
-                mGoogleApiClient, mLocationRequest, (com.google.android.gms.location.LocationListener) this);
-
+        current = ParseUser.getCurrentUser();
     }
     @Override
     public void onStart(Intent intent, int startId) {
-        int start = Service.START_STICKY;
+
+        api.requestLocationUpdates(
+                mGoogleApiClient, mLocationRequest, (com.google.android.gms.location.LocationListener) this);
 
     }
 
@@ -74,7 +79,7 @@ public class LocationService extends Service implements LocationListener,
 
     }
 
-   
+
 
     @Override
     public void onLocationChanged(Location location) {
@@ -85,16 +90,26 @@ public class LocationService extends Service implements LocationListener,
         Log.i("info", "Longitude :: " + longitude);
         if(isOnline()){
             //sending location details
-            sendLocation(location);
+            sendLocation(latitude,longitude);
         }else{
             this.stopSelf();
             Log.i("info", "Internet not available");
         }
     }
 
-    private void sendLocation(Location location)
+    private void sendLocation(double lat, double lon)
     {
-
+        ParseGeoPoint pgp = new ParseGeoPoint(lat,lon);
+        current.put("location",pgp);
+        current.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e != null)
+                {
+                    Log.i("info","Could not update location.");
+                }
+            }
+        });
     }
 
     @Override
