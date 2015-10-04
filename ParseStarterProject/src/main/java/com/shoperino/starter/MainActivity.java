@@ -8,6 +8,7 @@
  */
 package com.shoperino.starter;
 
+import android.app.Activity;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
@@ -23,12 +24,15 @@ import android.widget.Button;
 import com.parse.LogInCallback;
 import com.parse.ParseAnalytics;
 import com.parse.ParseException;
+import com.parse.ParseFacebookUtils;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.shoperino.shoperino.R;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.Collection;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -42,9 +46,11 @@ public class MainActivity extends ActionBarActivity {
     ParseUser curr = ParseUser.getCurrentUser();
     if (curr == null) {
       final Button button = (Button) findViewById(R.id.login_button);
+
       button.setOnClickListener(new View.OnClickListener() {
         public void onClick(View v) {
-          ParseFacebookUtils.logInWithReadPermissionsInBackground(this, permissions, new LogInCallback() {
+          Collection<String> permissions = new ArrayList<String>();
+          ParseFacebookUtils.logInWithReadPermissionsInBackground((Activity) v.getContext(), permissions, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException err) {
               if (user == null) {
