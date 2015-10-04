@@ -9,6 +9,7 @@
 package com.shoperino.starter;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
@@ -20,6 +21,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.parse.LogInCallback;
 import com.parse.ParseAnalytics;
@@ -44,6 +46,8 @@ public class MainActivity extends ActionBarActivity {
 
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
     ParseUser curr = ParseUser.getCurrentUser();
+
+    showToast(getApplicationContext(),"start");
     if (curr == null) {
       final Button button = (Button) findViewById(R.id.login_button);
 
@@ -54,11 +58,12 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void done(ParseUser user, ParseException err) {
               if (user == null) {
-                Log.d("MyApp", "Uh oh. The user cancelled the Facebook login.");
+                showToast(getApplicationContext(),"canceled");
               } else if (user.isNew()) {
                 user.saveInBackground();
+                showToast(getApplicationContext(),"successful login");
               } else {
-
+                showToast(getApplicationContext(),"successful login");
               }
             }
           });
@@ -68,6 +73,7 @@ public class MainActivity extends ActionBarActivity {
     else
     {
 
+      showToast(getApplicationContext(),"already logged in "+curr.toString());
     }
 
   }
@@ -92,5 +98,14 @@ public class MainActivity extends ActionBarActivity {
     }
 
     return super.onOptionsItemSelected(item);
+  }
+
+  private void showToast(Context context, String msg)
+  {
+
+    int duration = Toast.LENGTH_SHORT;
+
+    Toast toast = Toast.makeText(context, msg, duration);
+    toast.show();
   }
 }
